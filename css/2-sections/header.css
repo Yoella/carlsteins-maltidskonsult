@@ -1,0 +1,7 @@
+section .header {
+  background-image: url(../img/backgrounds/header-background.png);
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  justify-content: center; }

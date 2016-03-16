@@ -1,0 +1,33 @@
+.hem-sections section {
+  padding: 50px 0; }
+.hem-sections .flex {
+  display: flex;
+  flex-direction: rows; }
+.hem-sections .flex--center {
+  justify-content: center; }
+.hem-sections .flex--space-around {
+  justify-content: space-around; }
+
+.col-1 {
+  max-width: 300px;
+  margin: 0 10px;
+  background: pink; }
+
+.col-2 {
+  max-width: 620px;
+  margin: 0 10px;
+  background: yellow; }
+
+.col-50 {
+  width: 50%;
+  background: green; }
+
+@media (max-width: 640px) {
+  .hem-sections .flex {
+    display: block; }
+
+  .col-1 {
+    max-width: 100%; }
+
+  .col-50 {
+    width: auto; } }

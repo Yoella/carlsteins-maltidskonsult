@@ -1,0 +1,8 @@
+section .footer {
+  background-image: url(../img/backgrounds/footer-background.png);
+  background-position: center;
+  background-size: cover;
+  height: 400px; }
+  section .footer .content {
+    width: 620px;
+    height: 380px; }

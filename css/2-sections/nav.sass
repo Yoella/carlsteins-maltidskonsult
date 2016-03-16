@@ -1,0 +1,68 @@
+.menu-wrap
+  width: 100%
+  background: $nav-link-bgcolor
+  height: 49px
+
+  .menu
+    width: 1000px
+    margin: 0 auto
+
+    .clearfix:after
+      display: block
+      clear: both
+
+    li
+      margin: 0
+      list-style: none
+      font-family: $headfont
+
+    a
+      transition: all linear 0.15s
+      color: $nav-link-color
+      text-decoration: none
+
+    li:hover > a
+      text-decoration: none
+      color: $primary-color
+
+  //top level
+  .menu > ul > li
+    float: left
+    display: inline-block
+    position: relative
+    font-size: 24px
+
+  .menu > ul > li > a
+    padding: 10px 40px
+    display: inline-block
+
+  .menu > ul > li:hover > a
+    background: lighten($primary-color, 40%)
+
+  //bottom level
+  .sub-menu
+    width: 160%
+    padding: 5px 0
+    position: absolute
+    top: 100%
+    left: 0
+    z-index: -1
+    opacity: 0
+    transition: opacity linear 0.15s
+    box-shadow: 0 2px 3px rgba(52, 194, 237, 0.2)
+    background: $primary-color
+
+  .menu li:hover .sub-menu
+    z-index: 1
+    opacity: 1
+
+  .sub-menu li
+    display: block
+    font-size: 18px
+
+  .sub-menu li a
+    padding: 10px 30px
+    display: block
+
+  .sub-menu li a:hover
+    background: lighten($primary-color, 40%)
