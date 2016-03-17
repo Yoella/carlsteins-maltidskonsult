@@ -22,7 +22,9 @@ section .header {
   background: #34c2ed;
   height: 49px; }
   .menu-wrap .menu {
-    width: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     margin: 0 auto; }
     .menu-wrap .menu .clearfix:after {
       display: block;
@@ -72,7 +74,7 @@ section .header {
     background: #effafe; }
 
 .hem-sections section {
-  padding: 50px 0; }
+  padding: 10px 0; }
 .hem-sections .flex {
   display: flex;
   flex-direction: rows; }
@@ -83,17 +85,93 @@ section .header {
 
 .col-1 {
   max-width: 300px;
-  margin: 0 10px;
-  background: pink; }
+  margin: 0 10px; }
 
 .col-2 {
   max-width: 620px;
-  margin: 0 10px;
-  background: yellow; }
+  margin: 0 10px; }
 
 .col-50 {
-  width: 50%;
-  background: green; }
+  width: 50%; }
+
+.textbox {
+  transition: all 0.7s ease; }
+
+h5 {
+  font-family: Verdana;
+  font-size: 18px;
+  padding: 10px 0; }
+
+h2 {
+  font-family: Verdana;
+  font-size: 48px;
+  padding-top: 50px; }
+
+.bok {
+  position: relative; }
+  .bok .textbox {
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    background: rgba(231, 196, 253, 0.75); }
+  .bok .fade-out {
+    padding-left: 30%; }
+
+.bok:hover .textbox {
+  transform: scale(1); }
+
+.tjanster {
+  position: relative; }
+  .tjanster .textbox {
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    background: rgba(71, 217, 129, 0.75); }
+  .tjanster .fade-out {
+    padding-left: 5%; }
+
+.tjanster:hover .textbox {
+  transform: scale(1); }
+
+.about {
+  position: relative; }
+  .about .textbox {
+    text-align: center;
+    width: 620px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    background: rgba(248, 172, 52, 0.75); }
+  .about .fade-out {
+    padding-left: 30%; }
+
+.about:hover .textbox {
+  transform: scale(1); }
+
+.fade-out {
+  position: absolute;
+  padding-top: 100px;
+  opacity: 1;
+  transition: all 0.5s ease-in-out; }
+
+.bok:hover .fade-out {
+  opacity: 0; }
+
+.tjanster:hover .fade-out {
+  opacity: 0; }
+
+.about:hover .fade-out {
+  opacity: 0; }
 
 @media (max-width: 640px) {
   .hem-sections .flex {
@@ -131,3 +209,20 @@ section .footer {
       display: block;
       margin: auto;
       margin-top: 10px; }
+
+.button {
+  display: inline-block;
+  background: #34c2ed;
+  text-align: center;
+  padding: 0.4em 0;
+  line-height: 1;
+  text-decoration: none;
+  color: black;
+  font-family: Verdana;
+  font-size: 24px;
+  width: 180px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease-in-out; }
+  .button:hover {
+    background: #effafe;
+    color: #34c2ed; }

@@ -1,0 +1,68 @@
+image with text overlay-fade effect
+.container {
+position:relative;
+}
+.textbox:hover {
+opacity:1;
+}
+.text {
+padding-top: 50px;
+}
+.textbox {
+width:200px;
+height:150px;
+position:absolute;
+top:0;
+left:0;
+opacity:0;
+border-radius:5px;
+background-color: rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 15px 2px rgba(255,255,255,.75);
+box-shadow: 0px 0px 15px 2px rgba(255,255,255,.75);
+-webkit-transition: all 0.7s ease;
+transition: all 0.7s ease;
+}
+
+HTML
+<div class="container">
+<img src="" alt="">
+<div class="textbox">
+<p class="text">TEXT</p>
+</div>
+</div>
+
+image withe overlay-scale effect
+.container {
+position:relative;
+}
+.container .textbox {
+width:200px;
+height:150px;
+position:absolute;
+top:0;
+left:0;
+-webkit-transform: scale(0);
+transform: scale(0);
+border-radius:5px;
+background-color: rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 15px 2px rgba(255,255,255,.75);
+box-shadow: 0px 0px 15px 2px rgba(255,255,255,.75);
+}
+.container:hover .textbox {
+-webkit-transform: scale(1);
+transform: scale(1);
+}
+.text {
+padding-top: 50px;
+}
+.textbox {
+-webkit-transition: all 0.7s ease;
+transition: all 0.7s ease;
+}
+HTML
+<div class="container">
+<img src="" alt="">
+<div class="textbox">
+<p class="text">TEXT</p>
+</div>
+</div>

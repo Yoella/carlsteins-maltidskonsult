@@ -10,17 +10,21 @@
 
 .col-1 {
   max-width: 300px;
-  margin: 0 10px;
-  background: pink; }
+  margin: 0 10px; }
 
 .col-2 {
   max-width: 620px;
-  margin: 0 10px;
-  background: yellow; }
+  margin: 0 10px; }
 
 .col-50 {
-  width: 50%;
-  background: green; }
+  width: 50%; }
+
+.bok {
+  background-image: url(../img/hem/book-background.png);
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px; }
 
 @media (max-width: 640px) {
   .hem-sections .flex {

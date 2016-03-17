@@ -1,0 +1,140 @@
+
+.hem-sections
+
+  section
+    padding: 10px 0
+
+  //flex classes
+  .flex
+    display: flex
+    flex-direction: rows
+
+  .flex--center
+    justify-content: center
+
+  .flex--space-around
+    justify-content: space-around
+
+//columns
+.col-1
+  max-width: 300px
+  margin: 0 10px
+
+.col-2
+  max-width: 620px
+  margin: 0 10px
+
+.col-50
+  width: 50%
+
+//generell style
+
+.textbox
+  transition: all 0.7s ease
+
+h5
+  font-family: $headfont
+  font-size: 18px
+  padding: 10px 0
+
+h2
+  font-family: $headfont
+  font-size: 48px
+  padding-top: 50px
+
+//book element
+.bok
+  position: relative
+
+  .textbox
+    text-align: center
+    width: 300px
+    height: 300px
+    position: absolute
+    top: 0
+    left: 0
+    transform: scale(0)
+    background: rgba(231, 196, 253, 0.75)
+
+  .fade-out
+    padding-left: 30%
+
+.bok:hover .textbox
+  transform: scale(1)
+
+//work element
+.tjanster
+  position: relative
+
+  .textbox
+    text-align: center
+    width: 300px
+    height: 300px
+    position: absolute
+    top: 0
+    left: 0
+    transform: scale(0)
+    background: rgba(71, 217, 129, 0.75)
+
+  .fade-out
+    padding-left: 5%
+
+.tjanster:hover .textbox
+  transform: scale(1)
+
+//about element
+.about
+  position: relative
+
+  .textbox
+    text-align: center
+    width: 620px
+    height: 300px
+    position: absolute
+    top: 0
+    left: 0
+    transform: scale(0)
+    background: rgba(248, 172, 52, 0.75)
+
+  .fade-out
+    padding-left: 30%
+
+.about:hover .textbox
+  transform: scale(1)
+
+.fade-out
+  position: absolute
+  padding-top: 100px
+  opacity: 1
+  transition: all 0.5s ease-in-out
+
+.bok:hover .fade-out
+  opacity: 0
+
+.tjanster:hover .fade-out
+  opacity: 0
+
+.about:hover .fade-out
+  opacity: 0
+// float style
+  .float-up
+    transition: all 1s ease-in-out
+
+  .bok:hover h2
+    margin: -10px
+
+  .float-down
+    transition: all 1s ease-in-out
+
+  .bok:hover .button
+    margin: +10px
+
+@media (max-width: 640px)
+  .hem-sections .flex
+    display: block
+
+  .col-1
+    max-width: 100%
+
+  .col-50
+    width: auto
