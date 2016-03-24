@@ -111,7 +111,7 @@ h2 {
   position: relative; }
   .bok .textbox {
     text-align: center;
-    width: 300px;
+    width: 100%;
     height: 300px;
     position: absolute;
     top: 0;
@@ -128,7 +128,7 @@ h2 {
   position: relative; }
   .tjanster .textbox {
     text-align: center;
-    width: 300px;
+    width: 100%;
     height: 300px;
     position: absolute;
     top: 0;
@@ -145,7 +145,7 @@ h2 {
   position: relative; }
   .about .textbox {
     text-align: center;
-    width: 620px;
+    width: 100%;
     height: 300px;
     position: absolute;
     top: 0;
@@ -182,6 +182,22 @@ h2 {
 
   .col-50 {
     width: auto; } }
+section .info {
+  background: white; }
+section .bocker-info {
+  padding: 10px;
+  display: block;
+  text-align: left;
+  font-family: Verdana;
+  font-size: 24px;
+  font-weight: lighter; }
+section .bocker-info-text {
+  padding: 10px;
+  padding-top: 100px; }
+section .bokomslag {
+  padding: 10px;
+  float: left; }
+
 section .footer {
   background-image: url(../img/backgrounds/footer-background.png);
   background-position: center;
@@ -226,3 +242,40 @@ section .footer {
   .button:hover {
     background: #effafe;
     color: #34c2ed; }
+
+section .order-form {
+  background: rgba(248, 172, 52, 0.5);
+  width: 100%; }
+section .order-head {
+  font-family: Verdana;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  padding: 10px; }
+section .form-display {
+  display: block;
+  margin: 20px; }
+section .form-field-group {
+  position: relative;
+  flex: 2; }
+section input {
+  position: relative;
+  border: 1px solid black;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 0;
+  margin: 10px 0;
+  display: block;
+  height: 50px;
+  width: 100%; }
+  section input[type="submit"] {
+    flex: 1;
+    height: 50px;
+    border: 0;
+    float: right;
+    margin-bottom: 20px; }
+section label {
+  position: absolute;
+  z-index: 2;
+  font-size: 12px;
+  left: 5px;
+  top: 3px; }

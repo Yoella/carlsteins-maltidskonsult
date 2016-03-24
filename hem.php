@@ -11,7 +11,6 @@
   <div class="hem-sections">
     <?php
       include_once('pageelements/hem.html');
-      include_once('columns.php');
     ?>
   </div>
 

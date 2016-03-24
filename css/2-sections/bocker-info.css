@@ -1,0 +1,9 @@
+section .info {
+  background: white; }
+section .bocker-info {
+  padding: 10px;
+  display: block;
+  text-align: right; }
+section .bokomslag {
+  padding: 10px;
+  float: left; }
