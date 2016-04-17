@@ -12,7 +12,6 @@
     <?php
       include_once('pageelements/bocker.html');
       include_once('pageelements/bocker_send_form.php');
-      include_once('columns.php');
     ?>
   </div>
 

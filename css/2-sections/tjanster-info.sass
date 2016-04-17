@@ -1,0 +1,68 @@
+section
+  //vard och omsorg
+  .info-bubble
+    position: relative
+    margin-top: 20px
+    width: 600px
+    padding: 20px
+    background: $purple
+    border-radius: 10px
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5)
+
+  .info-bubble:after
+    content: ''
+    position: absolute
+    border-style: solid
+    border-width: 0 15px 15px
+    border-color: $purple transparent
+    display: block
+    width: 0
+    z-index: 1
+    margin-left: -15px
+    top: -14px
+    left: 10%
+
+  .info-bubble:before
+    content: ''
+    position: absolute
+    border-style: solid
+    border-width: 0 15px 15px
+    border-color: $purple transparent
+    display: block
+    width: 0
+    z-index: 0
+    margin-left: -15px
+    top: -14px
+    left: 10%
+
+  .bubble
+    width: 600px
+
+  .info-bubble-skola
+    background: $orange
+    left: -36%
+
+  .info-bubble-skola:after
+    border-color: $orange transparent
+    left: 50%
+
+  .info-bubble-skola:before
+    border-color: $orange transparent
+    left: 50%
+
+  .info-bubble-maltid
+    background: $green
+    left: -72%
+
+  .info-bubble-maltid:after
+    border-color: $green transparent
+    left: 90%
+
+  .info-bubble-maltid:before
+    border-color: $green transparent
+    left: 90%
+
+#box
+  background: $purple
+  width: 300px
+  height: 300px
